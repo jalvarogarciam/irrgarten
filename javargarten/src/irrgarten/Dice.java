@@ -1,3 +1,5 @@
+package irrgarten;
+
 import java.util.Random;
 
 public class Dice {
@@ -114,19 +116,5 @@ proporciona la propia clase.*/
         else if (usesLeft == MAX_USES) return false;
         else return generator.nextFloat() > (float)usesLeft/(float)(MAX_USES);
     }
-    public static void main(String[] args) {
-        /*System.out.println("....................PROBANDO discardElement................................................");
-        float[] probabilidad = new float[MAX_USES+1];
-        for (int i = 0; i <= MAX_USES; i++){
-            int descarta = 0;
-            float veces=10000000;
-            for (int j = 0; j < veces; j++){
-                if (discardElement(i)) descarta++;
-            }
-            probabilidad[i] = (float)descarta/veces;
-        }
-        for (int i = 0; i <= MAX_USES; i++){
-            System.out.println("p(discardElement("+i+") == true)"+ " -> " + probabilidad[i]*100 + "%");
-        }*/
-    }
+
 }

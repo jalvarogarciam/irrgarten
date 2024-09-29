@@ -1,8 +1,9 @@
+package irrgarten;
 
 
 public class Weapon {
-    /*Esta clase representa las armas que utiliza el jugador en los ataques 
-    durante los combates.*/
+/*Esta clase representa las armas que utiliza el jugador en los ataques 
+durante los combates.*/
     private float power;
     private int uses;
     
@@ -47,5 +48,5 @@ public class Weapon {
         for (int i = 0; i <= 5; i++){
             System.out.println("p(discard() == true) -> " + probabilidad[i]*100 + "%");
         }
-    }
+    } 
 }

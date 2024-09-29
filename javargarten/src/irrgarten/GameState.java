@@ -1,14 +1,9 @@
+package irrgarten;
+
 public class GameState {
+    
 /*Esta clase permitirá, de forma muy sencilla, almacenar una representación del 
-estado completo del juego: 
-    El estado del laberinto
-    El estado de los jugadores
-    El estado de los monstruos
-    El índice del jugador que tiene el turno
-    Un indicador sobre si ya hay un ganador
-    Un atributo adicional para guardar en una cadena de caracteres eventos 
-    interesantes que hayan ocurrido desde el turno anterior 
-*/
+estado completo del juego.*/
     private String labyrinth;   //Estado del laberinto
     private String players;     //Estado de los jugadores
     private String monsters;    //Estado de los monstruos
