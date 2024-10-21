@@ -45,6 +45,17 @@ proporciona la propia clase.*/
     private static Random generator = new Random();
 
 
+    //Getters de las constantes 
+    public static int MAX_USES(){return MAX_USES;}
+    public static float MAX_INTELLIGENCE(){return MAX_INTELLIGENCE;}
+    public static float MAX_STRENGTH(){return MAX_STRENGTH;}
+    public static float RESURRECT_PROB(){return RESURRECT_PROB;}
+    public static int WEAPONS_REWARD(){return WEAPONS_REWARD;}
+    public static int SHIELDS_REWARD(){return SHIELDS_REWARD;}
+    public static int HEALTH_REWARD(){return HEALTH_REWARD;}
+    public static int MAX_ATTACK(){return MAX_ATTACK;}
+    public static int MAX_SHIELD(){return MAX_SHIELD;}
+
     /*Devuelve un número de fila o columna aleatoria siendo el valor del 
     parámetro el número de filas o columnas del tablero. 
     La fila y la columna de menor valor tienen como índice el número cero. */
@@ -112,9 +123,7 @@ proporciona la propia clase.*/
     Es decir, las armas o escudos con más usos posibles es menos probable que 
     sean descartados.*/
     public static boolean discardElement(int usesLeft){
-        if (usesLeft == 0) return true;
-        else if (usesLeft == MAX_USES) return false;
-        else return generator.nextFloat() > (float)usesLeft/(float)(MAX_USES);
+        return generator.nextFloat() >= (float)usesLeft/(float)(MAX_USES);
     }
 
 }

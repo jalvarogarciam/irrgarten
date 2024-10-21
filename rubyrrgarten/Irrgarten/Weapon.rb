@@ -1,5 +1,5 @@
 module Irrgarten
-  require_relative 'Dice'
+  require_relative 'Dice.rb'
   class Weapon
     # Atributos
     attr_reader :power, :uses

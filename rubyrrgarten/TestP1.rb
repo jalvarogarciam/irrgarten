@@ -1,8 +1,8 @@
-require_relative 'Shield'
-require_relative 'Weapon'
-require_relative 'GameState'
-require_relative 'Dice'
-require_relative 'enums'
+require_relative 'Irrgarten/Shield.rb'
+require_relative 'Irrgarten/Weapon.rb'
+require_relative 'Irrgarten/GameState.rb'
+require_relative 'Irrgarten/Dice.rb'
+require_relative 'Irrgarten/enums.rb'
 
 
 puts ".............Probando Weapon y Shield............."
